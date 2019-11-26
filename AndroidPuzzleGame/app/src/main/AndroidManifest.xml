@@ -22,6 +22,10 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait">
         </activity>
+<<<<<<< HEAD
+        <activity android:name=".PuzzleActivity"></activity>
+        <activity android:name=".HintWindow"></activity>
+=======
         <activity
         android:name=".MainActivity2"
         android:screenOrientation="portrait">
@@ -35,6 +39,7 @@
         <activity android:name=".PuzzleActivity3" />
 
         <activity android:name=".HintWindow" />
+>>>>>>> TaeHoon/master
 
         <provider
             android:name="android.support.v4.content.FileProvider"
