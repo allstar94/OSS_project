@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".levelactivity">
+    tools:context=".levelactivity"
+    android:background="@drawable/table_background2">
 
     <Button
         android:id="@+id/button"
         android:layout_width="187dp"
         android:layout_height="79dp"
         android:layout_marginBottom="76dp"
-        android:text="@string/level_1"
+        android:text="easy"
         android:onClick="level_1"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="@+id/button4"
@@ -25,7 +26,7 @@
         android:layout_width="183dp"
         android:layout_height="68dp"
         android:layout_marginBottom="91dp"
-        android:text="level_2"
+        android:text="normal"
         android:onClick="level_2"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="@+id/button5"
@@ -43,7 +44,7 @@
         android:layout_marginEnd="73dp"
         android:layout_marginRight="73dp"
         android:layout_marginBottom="105dp"
-        android:text="level_3"
+        android:text="hard"
         android:onClick="level_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

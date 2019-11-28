@@ -45,8 +45,6 @@ public class PuzzleActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         final String assetName = intent.getStringExtra("assetName");
-        mCurrentPhotoPath = intent.getStringExtra("mCurrentPhotoPath");
-        mCurrentPhotoUri = intent.getStringExtra("mCurrentPhotoUri");
 
         // run image related code after the view was laid out
         // to have all dimensions calculated
@@ -90,7 +88,7 @@ public class PuzzleActivity extends AppCompatActivity {
 
     }
 
-    private void setPicFromAsset(String assetName, ImageView imageView) {
+    protected void setPicFromAsset(String assetName, ImageView imageView) {
         // Get the dimensions of the View
         int targetW = imageView.getWidth();
         int targetH = imageView.getHeight();
