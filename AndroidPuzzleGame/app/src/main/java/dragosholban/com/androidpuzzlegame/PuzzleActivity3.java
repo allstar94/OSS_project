@@ -1,5 +1,6 @@
 package dragosholban.com.androidpuzzlegame;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -16,6 +17,7 @@ import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -37,6 +39,9 @@ public class PuzzleActivity3 extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(300);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
 

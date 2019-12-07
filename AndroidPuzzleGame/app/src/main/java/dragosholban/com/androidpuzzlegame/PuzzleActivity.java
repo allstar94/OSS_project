@@ -1,5 +1,6 @@
 package dragosholban.com.androidpuzzlegame;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -16,8 +17,10 @@ import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -30,13 +33,16 @@ import java.util.Random;
 
 import static java.lang.Math.abs;
 
-public class PuzzleActivity extends AppCompatActivity {
+public class PuzzleActivity extends MainActivity {
     ArrayList<PuzzlePiece> pieces;
     String mCurrentPhotoPath;
     String mCurrentPhotoUri;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(300);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
 
@@ -74,6 +80,8 @@ public class PuzzleActivity extends AppCompatActivity {
             }
         });
     }
+
+
     public void Level_1()
     {
         pieces = splitImage1();

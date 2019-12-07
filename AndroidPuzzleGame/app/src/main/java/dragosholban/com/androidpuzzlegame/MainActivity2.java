@@ -1,12 +1,14 @@
 package dragosholban.com.androidpuzzlegame;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -32,6 +34,9 @@ public class MainActivity2 extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(300);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

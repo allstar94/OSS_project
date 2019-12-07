@@ -1,10 +1,12 @@
 package dragosholban.com.androidpuzzlegame;
 
+import android.os.Vibrator;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
-
+import android.os.Vibrator;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 import static java.lang.StrictMath.abs;
@@ -22,8 +24,10 @@ public class TouchListener implements View.OnTouchListener {
     public TouchListener(PuzzleActivity2 activity) { this.activity2 = activity;}
     public TouchListener(PuzzleActivity3 activity) { this.activity3 = activity;}
 
+
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
+
         float x = motionEvent.getRawX();
         float y = motionEvent.getRawY();
         final double tolerance = sqrt(pow(view.getWidth(), 2) + pow(view.getHeight(), 2)) / 10;
