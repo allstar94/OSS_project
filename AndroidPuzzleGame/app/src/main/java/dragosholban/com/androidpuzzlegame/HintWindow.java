@@ -75,7 +75,7 @@ public class HintWindow extends AppCompatActivity {
             int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
 
             is.reset();
-
+ 
             // Decode the image file into a Bitmap sized to fill the View
             bmOptions.inJustDecodeBounds = false;
             bmOptions.inSampleSize = scaleFactor;

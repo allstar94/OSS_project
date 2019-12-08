@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidPuzzleGame</string>
+    <string name="todo">TODO</string>
+    <string name="level_1">level_1</string>
+</resources>

@@ -92,7 +92,6 @@ public class PuzzleActivity3 extends AppCompatActivity {
     public void Level_3()
     {
         pieces = splitImage3();
-
     }
 
     private void setPicFromAsset(String assetName, ImageView imageView) {

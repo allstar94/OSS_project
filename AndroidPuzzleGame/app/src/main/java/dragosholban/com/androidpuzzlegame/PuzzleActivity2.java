@@ -39,9 +39,6 @@ public class PuzzleActivity2 extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-        vibrator.vibrate(300);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
 

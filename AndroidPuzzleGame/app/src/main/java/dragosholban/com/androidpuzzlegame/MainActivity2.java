@@ -37,6 +37,7 @@ public class MainActivity2 extends MainActivity {
         Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(300);
 
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
